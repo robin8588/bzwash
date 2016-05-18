@@ -257,13 +257,14 @@ Sandbox.define('/api/notifications','GET',function(req,res){
     res.json(state.notifications);
 });
 
-Sandbox.define('/upload/cars/cover','POST',function(req,res){
+Sandbox.define('/upload/cars/cover','POST',function(req, res){
     console.log(req.body.id);
     console.log(req.body.file);
+    console.log(req.get('contnet-type'));
     res.type('application/json');
     res.status(200);
     res.json({
-        "path":"~/content/cars/"+req.body.id+"/cover.jpg"
+        "path": "~/content/cars/" + req.body.id + "/cover.jpg"
     });
 });
 
