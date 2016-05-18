@@ -259,13 +259,15 @@ Sandbox.define('/api/notifications','GET',function(req,res){
 
 Sandbox.define('/upload/cars/cover','POST',function(req, res){
     console.log(req.get('content-type'));
-    console.log(req.body.file);
-    console.log(req.body.id);
+    console.log(req.query.file);
     if(!req.is('multipart/form-data'))
     {
         return res.send(415,'');
     }
     
+    if(req.query.id ===undefined){
+        return res.json(400,{"Message": "没有ID"});
+    }
     
     res.type('application/json');
     res.status(200);
