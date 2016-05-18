@@ -1,5 +1,5 @@
-exports.getAll=function(req,res){
-    if(!req.get('Authorization')){
+exports.getAll = function (req, res) {
+    if (!req.get('Authorization')) {
         return res.send(401, {
             "Message": "已拒绝为此请求授权。"
         });

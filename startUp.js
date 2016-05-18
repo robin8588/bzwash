@@ -1,4 +1,4 @@
-exports.config=function(req, res){
+exports.config = function (req, res) {
     if (!state.carWashLevels) {
         state.carWashLevels = [];
         state.carWashLevels.push({
@@ -26,7 +26,7 @@ exports.config=function(req, res){
             'name': '大型车'
         });
     }
-    
+
     if (!state.cars) {
         state.cars = [];
         state.cars.push({
@@ -36,7 +36,7 @@ exports.config=function(req, res){
             "model": "思域",
             "color": "白",
             "levelId": 4,
-            "cover":"~/content/cars/1/cover.jpg"
+            "cover": "~/content/cars/1/cover.jpg"
         });
         state.cars.push({
             "id": 2,
@@ -45,7 +45,7 @@ exports.config=function(req, res){
             "model": "昂可赛拉",
             "color": "红",
             "levelId": 4,
-            "cover":"~/content/cars/2/cover.jpg"
+            "cover": "~/content/cars/2/cover.jpg"
         });
         state.cars.push({
             "id": 3,
@@ -54,10 +54,10 @@ exports.config=function(req, res){
             "model": "朗逸",
             "color": "银",
             "levelId": 4,
-            "cover":"~/content/cars/3/cover.jpg"
+            "cover": "~/content/cars/3/cover.jpg"
         });
     }
-    
+
     if (!state.orders) {
         state.orders = [];
         state.orders.push({
@@ -73,30 +73,30 @@ exports.config=function(req, res){
             "id": 1
         });
     }
-    
-    if(!state.customer){
-        state.customer={
+
+    if (!state.customer) {
+        state.customer = {
             "name": "王",
             "gender": "先生",
             "birthday": "1985/8/8"
         };
     }
-    
-    if(!state.markets){
+
+    if (!state.markets) {
         state.markets = [];
-        
+
         state.markets.push({
             "id": 1,
-            "name":"西安"
+            "name": "西安"
         });
         state.markets.push({
             "id": 2,
-            "name":"喀什"
+            "name": "喀什"
         });
     }
-    
-    if(!state.quotations){
-        state.quotations=[];
+
+    if (!state.quotations) {
+        state.quotations = [];
         state.quotations.push({
             "id": 1,
             "name": "车外清洗",
@@ -118,9 +118,9 @@ exports.config=function(req, res){
             "price": 50
         });
     }
-    
-    if(!state.activities){
-        state.activities=[];
+
+    if (!state.activities) {
+        state.activities = [];
         state.activities.push({
             "id": 1,
             "title": "新款思域上市",
@@ -134,9 +134,9 @@ exports.config=function(req, res){
             "content": "<h1 style=\"text-align: center;\"><span style=\"color: #333333; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\">试驾马自达6 ATENZA&nbsp; &nbsp; &nbsp; &nbsp;</span></h1>\r\n<p><span style=\"color: #333333; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\">&nbsp; &nbsp; &nbsp; &nbsp;作为</span><a style=\"color: #136ec2; text-decoration: none; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\" href=\"http://baike.baidu.com/view/19411.htm\" target=\"_blank\">马自达</a><span style=\"color: #333333; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\">全新一代旗舰车型，阿特兹延续了进口</span><a style=\"color: #136ec2; text-decoration: none; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\" href=\"http://baike.baidu.com/view/10702106.htm\" target=\"_blank\">马自达ATENZA</a><span style=\"color: #333333; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\">的设计。该车预售价为18.98-24.98万元，其于2014年5月6日正式上市。外观面，采用马自达最新的&ldquo;魂动&rdquo;(Kodo)</span><a style=\"color: #136ec2; text-decoration: none; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\" href=\"http://baike.baidu.com/view/11385527.htm\" target=\"_blank\">设计语言</a><span style=\"color: #333333; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\">。&ldquo;U&rdquo;型脸和</span><a style=\"color: #136ec2; text-decoration: none; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\" href=\"http://baike.baidu.com/view/52538.htm\" target=\"_blank\">LED</a><span style=\"color: #333333; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\">前大灯，新车的大灯组内加入了</span><a style=\"color: #136ec2; text-decoration: none; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\" href=\"http://baike.baidu.com/view/10617007.htm\" target=\"_blank\">LED日间行车灯</a><span style=\"color: #333333; font-family: arial, 宋体, sans-serif; font-size: 14px; line-height: 24px; text-indent: 28px;\">。</span></p>\r\n<div class=\"para-title level-2\" style=\"clear: both; zoom: 1; overflow: hidden; border-left-width: 12px; border-left-style: solid; border-left-color: #4f9cee; line-height: 24px; font-size: 22px; font-family: 'Microsoft YaHei', SimHei, Verdana; margin: 35px 0px 15px -30px; position: relative; color: #333333; background-image: url('http://baike.bdimg.com/static/wiki-lemma/normal/resource/img/paraTitle-line_c5e6d61.png'); background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\">\r\n<h2 class=\"title-text\" style=\"margin: 0px; padding: 0px 8px 0px 18px; font-size: 22px; color: #000000; float: left; font-weight: 400; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\">配置</h2>\r\n<a class=\"edit-icon j-edit-link\" style=\"color: #888888; display: block; float: right; height: 22px; line-height: 22px; padding-left: 24px; font-size: 12px; font-family: SimSun; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\" data-edit-dl=\"1\">编辑</a></div>\r\n<div class=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: #333333; margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">\r\n<div class=\"lemma-picture text-pic layout-right\" style=\"border: 1px solid #e0e0e0; overflow: hidden; margin: 0px 0px 3px; position: relative; float: right; clear: right; width: 220px;\"><a class=\"image-link\" style=\"color: #136ec2; text-decoration: none; display: block; width: 220px; height: 125px;\" title=\"\" href=\"http://baike.baidu.com/pic/%E9%98%BF%E7%89%B9%E5%85%B9/13852234/0/8694a4c27d1ed21baa6b3074a96eddc450da3f84?fr=lemma&amp;ct=single\" target=\"_blank\"><img class=\"\" style=\"border: 0px; display: block; margin: 0px auto; width: 220px; height: 125px;\" src=\"http://e.hiphotos.baidu.com/baike/s%3D220/sign=adbcf6f5524e9258a23481ecac83d1d1/8694a4c27d1ed21baa6b3074a96eddc450da3f84.jpg\" alt=\"\" /></a></div>\r\n作为马自达全新一代旗舰车型，阿特兹的最大亮点之一就是应用了马自达创驰蓝天技术。相较传统的<a style=\"color: #136ec2; text-decoration: none;\" href=\"http://baike.baidu.com/view/1016404.htm\" target=\"_blank\">自然吸气</a>发动机，阿特兹的创驰蓝天发动机拥有13:1的高压缩比，燃油经济性及扭矩均提升了15%。新车全系标配智能怠速停止系统和<a style=\"color: #136ec2; text-decoration: none;\" href=\"http://baike.baidu.com/view/1960294.htm\" target=\"_blank\">制动能量回收系统</a>等应用，阿特兹2.5L车型百公里加速时间仅为8.3秒，百公里综合工况油耗最低只有6.9升，而2.0L车型的百公里综合工况油耗则仅有6.3升。</div>\r\n<div class=\"anchor-list\" style=\"position: relative; color: #333333; font-family: arial, 宋体, sans-serif; line-height: 18px;\"><a class=\"lemma-anchor para-title\" style=\"color: #136ec2; position: absolute; top: -50px;\" name=\"2\"></a><a class=\"lemma-anchor \" style=\"color: #136ec2; position: absolute; top: -50px;\" name=\"sub13594205_2\"></a><a class=\"lemma-anchor \" style=\"color: #136ec2; position: absolute; top: -50px;\" name=\"设计\"></a></div>\r\n<div class=\"para-title level-2\" style=\"clear: both; zoom: 1; overflow: hidden; border-left-width: 12px; border-left-style: solid; border-left-color: #4f9cee; line-height: 24px; font-size: 22px; font-family: 'Microsoft YaHei', SimHei, Verdana; margin: 35px 0px 15px -30px; position: relative; color: #333333; background-image: url('http://baike.bdimg.com/static/wiki-lemma/normal/resource/img/paraTitle-line_c5e6d61.png'); background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\">\r\n<h2 class=\"title-text\" style=\"margin: 0px; padding: 0px 8px 0px 18px; font-size: 22px; color: #000000; float: left; font-weight: 400; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\">设计</h2>\r\n<a class=\"edit-icon j-edit-link\" style=\"color: #888888; display: block; float: right; height: 22px; line-height: 22px; padding-left: 24px; font-size: 12px; font-family: SimSun; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;\" data-edit-dl=\"2\">编辑</a></div>\r\n<div class=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: #333333; margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">\r\n<div class=\"lemma-picture text-pic layout-right\" style=\"border: 1px solid #e0e0e0; overflow: hidden; margin: 0px 0px 3px; position: relative; float: right; clear: right; width: 220px;\"><a class=\"image-link\" style=\"color: #136ec2; text-decoration: none; display: block; width: 220px; height: 165px;\" title=\"\" href=\"http://baike.baidu.com/pic/%E9%98%BF%E7%89%B9%E5%85%B9/13852234/0/4afbfbedab64034fbafed897abc379310a551d6b?fr=lemma&amp;ct=single\" target=\"_blank\"><img class=\"\" style=\"border: 0px; display: block; margin: 0px auto; width: 220px; height: 165px;\" src=\"http://c.hiphotos.baidu.com/baike/s%3D220/sign=130e9500c911728b342d8b20f8fdc3b3/4afbfbedab64034fbafed897abc379310a551d6b.jpg\" alt=\"\" /></a></div>\r\n阿特兹延续了进口版Atenza的外观设计，采用马自达魂动设计理念，U形前脸配合LED前大灯，运动感更强。新车引入了11扬声器音响系统；相比上一代马自达6，阿特兹的轴距增加了105mm，后排空间更加宽敞。</div>\r\n<div class=\"para\" style=\"font-size: 14px; word-wrap: break-word; color: #333333; margin-bottom: 15px; text-indent: 2em; line-height: 24px; zoom: 1; font-family: arial, 宋体, sans-serif;\">阿特兹采用创驰蓝天底盘技术，搭载高性能的麦弗逊式独立前悬+<a style=\"color: #136ec2; text-decoration: none;\" href=\"http://baike.baidu.com/view/107879.htm\" target=\"_blank\">多连杆式</a>独立后悬，经过结构优化，实现了重量减轻与刚性提升的双重效果。其采用第六代EPAS电动助力转向和14.2:1的运动化齿轮比设定，提升了车辆在中低速区域的灵活性和高速区域的稳定性，缩短了制动距离，同时有效抑制了制动点头现象。<br />　　此外，阿特兹在安全性能上也有所提升，新车车身<a style=\"color: #136ec2; text-decoration: none;\" href=\"http://baike.baidu.com/view/2896751.htm\" target=\"_blank\">高强度钢板</a>的使用比例达60%，前后<a style=\"color: #136ec2; text-decoration: none;\" href=\"http://baike.baidu.com/view/6647104.htm\" target=\"_blank\">防撞梁</a>强度达1800Mpa；其高刚性轻量化车身的整体强度提升了30%，而同时重量减轻了8%。另据测试结果显示，时速100公里时阿特兹的最短刹车距离仅为37米，大大提高了驾乘安全性。截至目前，已有美国公路安全保险协会IIHS、美国国家公路交通安全管理局NHTSA、<a style=\"color: #136ec2; text-decoration: none;\" href=\"http://baike.baidu.com/view/6245732.htm\" target=\"_blank\">欧洲新车安全评鉴协会</a>E-NCAP和日本新车安全评鉴协会J-NCAP四家机构为其给出了最高的碰撞安全评级。<span style=\"font-size: 12px; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; white-space: nowrap; margin-left: 2px; color: #3366cc; cursor: default; padding: 0px 2px;\">[1]</span><a class=\"sup-anchor\" style=\"color: #136ec2; position: relative; top: -50px; font-size: 0px; line-height: 0;\" name=\"ref_[1]_13594205\"></a>&nbsp;</div>"
         });
     }
-    
-    if(!state.notifications){
-        state.notifications=[];
+
+    if (!state.notifications) {
+        state.notifications = [];
         state.notifications.push({
             "id": 1,
             "title": "内部培训",
@@ -150,6 +150,6 @@ exports.config=function(req, res){
             "postDate": "2016-05-17T23:37:39"
         });
     }
-    
+
     res.send('ok');
 };
