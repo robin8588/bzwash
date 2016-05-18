@@ -72,3 +72,39 @@ exports.changePassword=function(req,res){
 exports.logout=function(req,res){
     res.send(200,'');
 };
+
+exports.token=function(req, res){
+    // Check the request, make sure it is a compatible type
+    if (!req.is('application/x-www-form-urlencoded')) {
+        return res.send(400, ' content type 必须是 application/x-www-form-urlencoded');
+    }
+    
+    if (req.body.grant_type != 'password') {
+        return res.send(400, {
+            "error": "unsupported_grant_type"
+        });
+    }
+    
+    // Set the type of response, sets the content type.
+    res.type('application/json');
+    
+    // Set the status code of the response.
+    res.status(200);
+    
+    var now = new Date();
+    var expTime = now.getTime() + Number(1209599);
+    var exp = new Date();
+    exp.setTime(expTime);
+    
+    var returnData = {
+        "access_token": "imSXTs2OqSrGWzsFQhIXziFCO3rF...",
+        "token_type": "bearer",
+        "expires_in": 1209599,
+        "userName": req.body.username,
+        ".issued": now.toString(),
+        ".expires": exp.toString()
+    };
+    
+    // Send the response body.
+    res.json(returnData);
+};
