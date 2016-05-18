@@ -258,9 +258,7 @@ Sandbox.define('/api/notifications','GET',function(req,res){
 });
 
 Sandbox.define('/upload/cars/cover','POST',function(req, res){
-    console.log(req.body.id);
-    console.log(req.body.file);
-    console.log(req.get('contnet-type'));
+    console.log(req.get('content-type'));
     res.type('application/json');
     res.status(200);
     res.json({
