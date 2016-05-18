@@ -1,4 +1,4 @@
-exports.config = function (req, res) {
+exports.seed = function (req, res) {
     if (!state.carWashLevels) {
         state.carWashLevels = [];
         state.carWashLevels.push({

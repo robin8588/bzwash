@@ -13,7 +13,7 @@ var activities = require('./api/Activities.js');
 var notifications = require('./api/Notifications.js');
 var upload = require('./upload/Upload.js');
 
-Sandbox.define('/appStartUp', 'GET', startUp.config);
+Sandbox.define('/appStartUp', 'GET', startUp.seed);
 
 Sandbox.define('/token', 'POST', account.token);
 
