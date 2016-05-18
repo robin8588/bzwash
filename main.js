@@ -261,7 +261,7 @@ Sandbox.define('/upload/cars/cover','POST',function(req, res){
     console.log(req.get('content-type'));
     if(req.is('multipart/form-data'))
     {
-        return res.send(415);
+        return res.send(415,'');
     }
     
     res.type('application/json');
