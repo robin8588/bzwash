@@ -258,8 +258,6 @@ Sandbox.define('/api/notifications','GET',function(req,res){
 });
 
 Sandbox.define('/upload/cars/cover','POST',function(req, res){
-    console.log(req.get('content-type'));
-    console.log(req.query.file);
     if(!req.is('multipart/form-data'))
     {
         return res.send(415,'');
@@ -277,6 +275,48 @@ Sandbox.define('/upload/cars/cover','POST',function(req, res){
     res.status(200);
     res.json({
         "path": "~/content/cars/" + req.query.id + "/cover.jpg"
+    });
+});
+
+Sandbox.define('/upload/orders/washbefore','POST',function(req, res){
+    if(!req.is('multipart/form-data'))
+    {
+        return res.send(415,'');
+    }
+    
+    if(req.query.file ===undefined){
+        return res.json(400,{"Message": "没有图片"});
+    }
+    
+    if(req.query.id ===undefined){
+        return res.json(400,{"Message": "没有ID"});
+    }
+    
+    res.type('application/json');
+    res.status(200);
+    res.json({
+        "path": "~/content/orders/" + req.query.id + "/washbefore.jpg"
+    });
+});
+
+Sandbox.define('/upload/orders/washafter','POST',function(req, res){
+    if(!req.is('multipart/form-data'))
+    {
+        return res.send(415,'');
+    }
+    
+    if(req.query.file ===undefined){
+        return res.json(400,{"Message": "没有图片"});
+    }
+    
+    if(req.query.id ===undefined){
+        return res.json(400,{"Message": "没有ID"});
+    }
+    
+    res.type('application/json');
+    res.status(200);
+    res.json({
+        "path": "~/content/orders/" + req.query.id + "/washafter.jpg"
     });
 });
 
