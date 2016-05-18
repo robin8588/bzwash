@@ -265,6 +265,10 @@ Sandbox.define('/upload/cars/cover','POST',function(req, res){
         return res.send(415,'');
     }
     
+    if(req.query.file ===undefined){
+        return res.json(400,{"Message": "没有图片"});
+    }
+    
     if(req.query.id ===undefined){
         return res.json(400,{"Message": "没有ID"});
     }
