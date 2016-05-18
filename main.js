@@ -3,15 +3,15 @@
  * 
  */
 var startUp=require('./startUp.js');
-var cars = require('./api/cars.js');
-var account = require('./api/account.js');
-var customer = require('./api/customers.js');
-var market = require('./api/markets.js');
-var carWashLevel = require('./api/carWashLevels.js');
-var quotation = require('./api/quotations.js');
-var activities = require('./api/activities.js');
-var notifications = require('./api/notifications.js');
-var upload = require('./upload/upload.js');
+var cars = require('./api/Cars.js');
+var account = require('./api/Account.js');
+var customer = require('./api/Customers.js');
+var market = require('./api/Markets.js');
+var carWashLevel = require('./api/CarWashLevels.js');
+var quotation = require('./api/Quotations.js');
+var activities = require('./api/Activities.js');
+var notifications = require('./api/Notifications.js');
+var upload = require('./upload/Upload.js');
 
 Sandbox.define('/appStartUp', 'GET',startUp.config);
 
