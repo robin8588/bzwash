@@ -2,7 +2,7 @@
  * BZWash API Sandbox
  * 
  */
-var startUp = require('./startUp.js');
+var startUp = require('./startup.js');
 var cars = require('./api/Cars.js');
 var account = require('./api/Account.js');
 var customer = require('./api/Customers.js');
