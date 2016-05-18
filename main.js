@@ -259,10 +259,15 @@ Sandbox.define('/api/notifications','GET',function(req,res){
 
 Sandbox.define('/upload/cars/cover','POST',function(req, res){
     console.log(req.get('content-type'));
+    if(req.is('multipart/form-data'))
+    {
+        return res.send(415);
+    }
+    
     res.type('application/json');
     res.status(200);
     res.json({
-        "path": "~/content/cars/" + req.body.id + "/cover.jpg"
+        "path": "~/content/cars/" + req.query.id + "/cover.jpg"
     });
 });
 
