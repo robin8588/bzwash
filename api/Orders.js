@@ -39,10 +39,11 @@ exports.getOne = function (req, res) {
             "Message": "已拒绝为此请求授权。"
         });
     }
-
+console.log(req.params.id);
     var order = _.find(state.orders, { 'id': Number(req.params.id) });
 
     if (order === undefined) {
+        console.log(order.id);
         return res.send(404, '');
     }
 
