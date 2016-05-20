@@ -230,9 +230,9 @@ exports.addOrder = function (req, res) {
         "WorkerId": 0,
         "WorkerName": null,
         "WorkerMobile": null
-    }
+    };
 
-    state.order.push(order);
+    state.orders.push(order);
     res.type('application/json');
     res.status(201);
     res.json(order);
