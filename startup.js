@@ -58,21 +58,6 @@ exports.seed = function (req, res) {
         });
     }
 
-    if (!state.orders) {
-        state.orders = [];
-        state.orders.push({
-            "address": "陕西省西安市",
-            "lat": "131.1",
-            "lng": "128.3",
-            "carId": 1,
-            "serviceIds": "1,2,3,4",
-            "disturb": 1,
-            "createDate": "2016/04/22",
-            "orderNumber": "784293049823754",
-            "status": "下单成功",
-            "id": 1
-        });
-    }
 
     if (!state.customer) {
         state.customer = {
