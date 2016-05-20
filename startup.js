@@ -119,6 +119,49 @@ exports.seed = function (req, res) {
         });
     }
 
+    if (!state.orders) {
+        state.orders = [];
+        state.orders.push({
+            "OrderId": 1,
+            "OrderNumber": "2635993396669781379",
+            "Park": "高薪四路",
+            "Longitude": "121.472644",
+            "Latitude": "31.231706",
+            "Create": "2016-05-20T11:35:22.7735498+08:00",
+            "Arrange": "2016-05-20T11:35:22.7746892+08:00",
+            "Start": "2016-05-20T11:35:22.7746892+08:00",
+            "Finish": "2016-05-20T11:35:22.7746892+08:00",
+            "StartImg": "~/content/orders/1/washbefore.jpg",
+            "FinishImg": "~/content/orders/1/washafter.jpg",
+            "Comment": "洗的真X干净",
+            "Note": "停车场东边",
+            "DoNotDisturb": true,
+            "Status": 4,
+            "MarketId": 1,
+            "MarketName": "西安",
+            "CarId": 1,
+            "License": "陕A 888888",
+            "Brand": "本田",
+            "Model": "思域",
+            "Color": "白",
+            "Cover": "~/content/cars/1/cover.jpg",
+            "CarWashLevelId": 2,
+            "CarWashLevelName": "中型车",
+            "CustomerId": 2,
+            "CustomerTitle": "王 先生",
+            "CustomerMobile": "18500000000",
+            "CustomerBalance": 500,
+            "MemberLevelId": 1,
+            "MemberLevelName": "非会员",
+            "ServiceIds": "1,2,3,4",
+            "ServiceNames": "车外清洗+内饰清洗+发动机舱清洗+后备箱清洗",
+            "ServicePrices": 430,
+            "WorkerId": 1,
+            "WorkerName": "刘师傅",
+            "WorkerMobile": "13000000000"
+        });
+    }
+
     if (!state.activities) {
         state.activities = [];
         state.activities.push({

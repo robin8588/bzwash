@@ -11,6 +11,7 @@ var carWashLevel = require('./api/CarWashLevels.js');
 var quotation = require('./api/Quotations.js');
 var activities = require('./api/Activities.js');
 var notifications = require('./api/Notifications.js');
+var orders = require('./api/Orders.js');
 var upload = require('./upload/Upload.js');
 
 Sandbox.define('/appStartUp', 'GET', startUp.seed);
@@ -51,11 +52,20 @@ Sandbox.define('/api/activities/{id}', 'GET', activities.getOne);
 
 Sandbox.define('/api/notifications', 'GET', notifications.getAll);
 
+Sandbox.define('/api/orders', 'GET', orders.getAll);
+
+Sandbox.define('/api/orders/{id}', 'GET', orders.getOne);
+
+Sandbox.define('api/orders', 'POST', orders.addOrder);
+
+Sandbox.define('api/orders', 'PUT', orders.updateOrder);
+
 Sandbox.define('/upload/cars/cover', 'POST', upload.uploadCarCover);
 
 Sandbox.define('/upload/orders/washbefore', 'POST', upload.uploadWashBefore);
 
 Sandbox.define('/upload/orders/washafter', 'POST', upload.uploadWashAfter);
+
 
 
 

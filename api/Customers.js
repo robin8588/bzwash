@@ -54,7 +54,7 @@ exports.updateCustomer = function (req, res) {
     if (req.body.gender === 0) {
         state.customer.gender = "先生";
     } else {
-        state.customer.gender = "";
+        state.customer.gender = "女士";
     }
 
     if (req.body.birthday !== undefined) {
