@@ -58,7 +58,7 @@ Sandbox.define('/api/orders/{id}', 'GET', orders.getOne);
 
 Sandbox.define('/api/orders', 'POST', orders.addOrder);
 
-Sandbox.define('/api/orders', 'PUT', orders.updateOrder);
+Sandbox.define('/api/orders/{id}', 'PUT', orders.updateOrder);
 
 Sandbox.define('/upload/cars/cover', 'POST', upload.uploadCarCover);
 
