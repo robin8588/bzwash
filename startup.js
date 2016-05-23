@@ -149,7 +149,7 @@ exports.seed = function (req, res) {
 
     if (!state.positions) {
         state.positions = [];
-        state.pisitions.push({
+        state.positions.push({
             "address": "西安",
             "lng": 131.1,
             "lat": 121.2,
