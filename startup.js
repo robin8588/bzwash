@@ -171,7 +171,7 @@ exports.seed = function (req, res) {
             "address": "西安",
             "lng": 131.3,
             "lat": 121.5,
-            "type": 1,
+            "type": 2,
             "date": "2016-05-20T18:00:00.7735498+08:00"
         });
     }
