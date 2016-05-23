@@ -12,6 +12,7 @@ var quotation = require('./api/Quotations.js');
 var activities = require('./api/Activities.js');
 var notifications = require('./api/Notifications.js');
 var orders = require('./api/Orders.js');
+var positions=require('./api/positions.js')
 var upload = require('./upload/Upload.js');
 
 Sandbox.define('/appStartUp', 'GET', startUp.seed);
@@ -59,6 +60,12 @@ Sandbox.define('/api/orders/{id}', 'GET', orders.getOne);
 Sandbox.define('/api/orders', 'POST', orders.addOrder);
 
 Sandbox.define('/api/orders/{id}', 'PUT', orders.updateOrder);
+
+Sandbox.define('/api/positions', 'GET', positions.getAttendances);
+
+Sandbox.define('/api/positions', 'POST', positions.addAttendance);
+
+Sandbox.define('/api/positions', 'PUT', positions.updatePosition);
 
 Sandbox.define('/upload/cars/cover', 'POST', upload.uploadCarCover);
 

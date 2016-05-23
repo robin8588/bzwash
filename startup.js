@@ -147,6 +147,35 @@ exports.seed = function (req, res) {
         });
     }
 
+    if (!state.positions) {
+        state.positions = [];
+        state.pisitions.push({
+            "address": "西安",
+            "lng": 131.1,
+            "lat": 121.2,
+            "type": 0,
+            "date":"2016-05-20T11:35:22.7735498+08:00"
+        });
+    }
+
+    if (!state.attendances) {
+        state.attendances = [];
+        state.attendances.push({
+            "address": "西安",
+            "lng": 131.1,
+            "lat": 121.2,
+            "type": 1,
+            "date": "2016-05-20T10:00:00.7735498+08:00"
+        });
+        state.attendances.push({
+            "address": "西安",
+            "lng": 131.3,
+            "lat": 121.5,
+            "type": 1,
+            "date": "2016-05-20T18:00:00.7735498+08:00"
+        });
+    }
+
     if (!state.activities) {
         state.activities = [];
         state.activities.push({
