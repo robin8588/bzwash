@@ -119,7 +119,7 @@ exports.updatePosition = function (req, res) {
         });
     }
 
-    if (req.body.type == 0) {
+    if (req.body.type == 0 || req.body.type == 3) {
         var now = new Date()
         var position = {
             "address": req.body.address,
