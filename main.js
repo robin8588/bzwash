@@ -12,7 +12,7 @@ var quotation = require('./api/Quotations.js');
 var activities = require('./api/Activities.js');
 var notifications = require('./api/Notifications.js');
 var orders = require('./api/Orders.js');
-var positions=require('./api/positions.js')
+var positions = require('./api/positions.js');
 var upload = require('./upload/Upload.js');
 
 Sandbox.define('/appStartUp', 'GET', startUp.seed);
