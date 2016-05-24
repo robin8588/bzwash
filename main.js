@@ -39,6 +39,8 @@ Sandbox.define('/api/customers', 'GET', customer.getCustomer);
 
 Sandbox.define('/api/customers', 'POST', customer.updateCustomer);
 
+Sandbox.define('/api/customers/balance','GET',customer.balance);
+
 Sandbox.define('/api/markets', 'GET', market.getAll);
 
 Sandbox.define('/api/markets/{id}', 'GET', market.getOne);
