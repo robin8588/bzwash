@@ -1,5 +1,5 @@
 exports.getCustomer = function (req, res) {
-    if (req.get('Authorization') == 'undefined') {
+    if (req.get('Authorization') == undefined) {
         return res.send(401, {
             "Message": "已拒绝为此请求授权。"
         });
